@@ -73,19 +73,19 @@ angular.module('ivh.treeview').directive('ivhTreeviewCheckboxHelper', [function(
 
       // Update the checkbox when the node's indeterminate status changes
       scope.$watch('node.' + indeterminateAttr, function(newVal, oldVal) {
-        element.find('input').prop('indeterminate', newVal);
+        element.find('md-checkbox').prop('indeterminate', newVal);
       });
     },
     template: [
-      '<input type="checkbox"',
+      '<md-checkbox',
         'class="ivh-treeview-checkbox"',
+        'md-indeterminate="node.__ivhTreeviewIndeterminate"',
         'ng-model="isSelected"',
         'ng-click="resolveIndeterminateClick()"',
         'ng-change="trvw.select(node, isSelected)" />'
     ].join('\n')
   };
 }]);
-
 
 
 /**

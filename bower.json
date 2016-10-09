@@ -7,7 +7,8 @@
   "description": "Treeview for angular with filtering and checkboxes",
   "main": [
     "dist/ivh-treeview.js",
-    "dist/ivh-treeview.css"
+    "dist/ivh-treeview.css",
+    "dist/ivh-treeview-theme-basic.css"
   ],
   "keywords": [
     "angular",
