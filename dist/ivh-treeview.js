@@ -83,7 +83,7 @@ angular.module('ivh.treeview').directive('ivhTreeviewCheckboxHelper', [function(
         'ng-model="isSelected"',
         'ng-click="resolveIndeterminateClick()"',
         'aria-label=""',
-        'ng-change="trvw.select(node, isSelected)", />'
+        'ng-change="trvw.select(node, isSelected)" />'
     ].join('\n')
   };
 }]);
