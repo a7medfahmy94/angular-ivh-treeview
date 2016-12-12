@@ -82,7 +82,7 @@ angular.module('ivh.treeview').directive('ivhTreeviewCheckboxHelper', [function(
         'md-indeterminate="node.__ivhTreeviewIndeterminate"',
         'ng-model="isSelected"',
         'ng-click="resolveIndeterminateClick()"',
-        'aria-label=""'
+        'aria-label=""',
         'ng-change="trvw.select(node, isSelected)", />'
     ].join('\n')
   };
